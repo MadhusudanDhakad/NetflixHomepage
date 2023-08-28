@@ -1,0 +1,474 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(31, 30, 30);
+    /* height: 100%; */
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    /* width: 100%; */
+    overflow-x: hidden;
+}
+
+
+
+.container {
+    height: 100%;
+} 
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.nav .logo img{
+    height: 3.2em;
+    width: 12em;
+    margin-left: 1.1em;
+}
+
+.nav .objects button{
+    cursor: pointer;
+}
+
+.nav .objects select{
+    cursor: pointer;
+}
+
+.nav .objects #ops{
+    margin: 0em 1.1em 0em 0em;
+    padding: 0.4em 1.5em;
+    min-height: 1.2em;
+    font-size: 1.2em;
+    background-color: rgba(30, 29, 29, 0.384);
+    color:  rgb(212, 211, 211);
+    border-radius: 0.3em;
+}
+
+/* #ops option{
+    margin: 1.8em;
+    color: white;
+} 
+*/
+
+.nav .objects button{
+    padding: 0.7em 0.8em 0.8em 0.8em;
+    background-color: red;
+    border-radius: 0.5em;
+}
+
+.nav .objects button a{
+    margin: 0.3em;
+    color:  rgb(212, 211, 211);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+
+/* SECTION:1 -> 'HOME' */
+
+
+#home{
+    color:  white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3em;
+    justify-content: center;
+    /* position: relative; 
+    top: 8em; */
+    height:   750px;
+}
+
+#home::before{
+    content: "";
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(/images/BG.jpg) center center / cover no-repeat;
+    position: absolute;
+    background-size: 140% 135%;
+    top: 0px;
+    left: 0px;
+    height: 875px;
+    width: 100vw;
+    z-index: -1;
+    opacity: 1;
+}
+
+#home button{
+    cursor: pointer;
+}
+
+#home h1{
+    font-size: 3.5em;
+    margin: 0em 0em 0.2em 0em;
+    font-weight: bold;
+}
+
+#home #p1{
+    font-size: 1.8em;
+    margin: 0em 0em 0.8em 0em;
+}
+
+#home #p2{
+    font-size: 1.5em;
+    margin: 0.4em 0em 0.8em 0em;
+}
+
+#home input{
+    height: 2em;
+    padding: 1.4em 7.5em 1.4em 1em;
+    font-size: 1.5em;
+    /* text-align: center; */
+    border-radius: 0.2em;
+    background-color: rgba(29, 28, 28, 0.788);
+    border: 0.0001em solid  rgb(248, 227, 227);
+    margin-right: 0.2em;
+    color: white;
+}
+
+#home button{
+    height: 2em;
+    padding: 1.2em 2.6em 3.8em 2em;
+    border-radius: 0.5em;
+    background-color: rgb(254, 12, 12);
+    border-radius: 1px solid red;
+}
+
+#home button a{
+    font-size: 2.2em;
+    text-decoration: none;
+    color:  rgb(212, 211, 211);
+    font-weight: bold;
+    /* background-color: rgb(220, 22, 22); */
+}
+
+#home .content{
+    text-align: center;
+}
+
+
+/* SECTION:2 -> 'WATCH ON TV' */
+
+
+#watchontv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    height: 690px;
+    width: 100vw;
+    position: relative;
+    top: 0.9em;
+    padding: 3em 0em 1em 2.5em;
+    background-color: black;
+}
+
+#watchontv .item1{
+    margin-top: 12em;
+}
+
+#watchontv .item2{
+    margin-top: 6em;
+    height: 27em;
+}
+
+#watchontv h1{
+    font-size: 3.8em;
+    font-weight: bold;
+    color:  rgb(212, 211, 211);
+}
+
+#watchontv p{
+    color:  rgb(212, 211, 211);
+    font-size:  1.8em;
+    margin-top: 0.5em;
+}
+
+
+/* SECTION:3 -> DOWNLOAD AND WATCH OFFLINE */
+
+
+#download{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    height: 690px;
+    width: 100vw;
+    position: relative;
+    top: 1.5em;
+    padding: 3em 0em 1em 0.5em;
+    background-color: black;
+}
+
+
+#download .item1{
+    height: 30em;
+    margin-top: 5em;
+    margin-left: -3em;
+}
+
+#download .item2{
+    margin-top: 10em;
+    margin-left: -4em;
+}
+
+#download h1{
+    font-size: 3.5em;
+    font-weight: bold;
+    color:  rgb(212, 211, 211);
+}
+
+#download p{
+    color:  rgb(212, 211, 211);
+    font-size:  1.8em;
+    margin-top: 0.5em;
+}
+
+
+/* SECTION:4 -> ONLINE STREAMING */
+
+#watch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    height: 690px;
+    width: 100vw;
+    position: relative;
+    top: 2.1em;
+    padding: 3em 0em 1em 0.5em;
+    background-color: black;
+}
+
+#watch .item1{
+    margin-top: 12em;
+    margin-left: 2em;
+}
+
+#watch .item2{
+    height: 29em;
+    margin-top: 3em;
+    margin-left: 0em;
+    margin-right: -1.2em;
+}
+
+#watch h1{
+    font-size: 3.5em;
+    font-weight: bold;
+    color:  rgb(212, 211, 211);
+}
+
+#watch p{
+    color:  rgb(212, 211, 211);
+    font-size:  1.8em;
+    margin-top: 0.5em;
+}
+
+/* SECTION:5 -> KIDS PROFILES */
+
+#kidsprofiles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    height: 690px;
+    width: 100vw;
+    position: relative;
+    top: 2.7em;
+    padding: 3em 0em 1em 0.5em;
+    background-color: black;
+}
+
+#kidsprofiles .item1{
+    height: 33.4em;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: -1.2em;
+}
+
+#kidsprofiles .item2{
+    margin-top: 12em;
+    margin-left: 0em;
+}
+
+#kidsprofiles h1{
+    font-size: 3.5em;
+    font-weight: bold;
+    color:  rgb(212, 211, 211);
+}
+
+#kidsprofiles p{
+    color:  rgb(212, 211, 211);
+    font-size:  1.8em;
+    margin-top: 0.5em;
+}
+
+/* SECTION:6 -> FREQUENTLY ASKED QUESTIONS */
+
+ 
+#faq{
+    background-color: black;
+    color:  rgb(212, 211, 211);
+    height: 1170px;
+    position: relative;
+    top: 3.3em;
+    text-align: center;
+    padding: 4em 2.5em;
+}
+
+#faq button{
+    cursor: pointer;
+}
+
+#faq h1{
+    font-size: 3.57em;
+    color:  rgb(212, 211, 211);
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    padding: 0em;
+}
+
+#faq details{
+    display: flex;
+    width: 100%;
+    min-height: 15%;
+    /* border: 1px solid white; */
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(45, 43, 43);
+    font-size: 1.5em;
+    padding: 1em;
+    margin-top: 13px;
+    transition: all 0.3s;
+    text-align: start;
+}
+
+#faq details:hover{
+    display: flex;
+    width: 100%;
+    min-height: 15%;
+    /* border: 1px solid white; */
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(69, 68, 68);
+    font-size: 1.5em;
+    padding: 1em;
+    margin-top: 13px;
+}
+
+#faq details > summary{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    /* align-content: center; */
+    /* margin-top: 0.9em; */
+    
+    font-size: 1.2em;
+    /* margin-left: 2em; */
+    margin: 0.2em;
+}
+
+#faq details .solid{
+        border-top: 3px solid #bbb;
+        margin-top: 1em;
+}
+
+
+#faq details > p{
+    margin-top: 2em;
+    font-size: 1.2em;
+}
+
+#faq .faqgetstarted{
+    padding: 2em;
+    margin-top: 2em;
+}
+
+#faq .faqgetstarted p{
+    font-size: 1.4em;
+}
+
+#faq .faqgetstarted .enteremail{
+    margin: 1em;
+}
+
+#faq .faqgetstarted input{
+    padding: 2.3em 21em 1.8em 1.5em;
+    border: 1px solid #37cf8b;
+    border-radius: 5px;
+    background-color: #1e1e2c;
+}
+
+#faq .faqgetstarted button{
+    border-radius: 6px;
+    padding: 1.2em 3em 1.6em 2em;
+    background-color: red;
+}
+
+#faq .faqgetstarted button a{
+    text-decoration: none;
+    color:  rgb(212, 211, 211);
+    font-size: 2.2em;
+    font-weight: bold;
+} 
+
+
+/* SECTION:7 -> footer */
+
+footer{
+    height: 570px;
+    background-color: black;
+    color:  rgb(212, 211, 211);
+    position: relative;
+    top: 3.9em;
+    /* text-align: center; */
+    padding: 4em 2.5em;
+}
+
+footer select{
+    cursor: pointer;
+}
+
+footer #p1{
+    font-size: 1.1em;
+    margin-top: 1em;
+}
+
+footer #p2{
+    margin-top: 1.4em;
+    font-size: 1.1em;
+}
+
+footer .footeritems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2.5em 0em;
+    width: 75%;
+}
+
+footer .footeritems .items{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+}
+
+footer .items a{
+    color: rgb(212, 211, 211);
+    font-size: 1.04em;
+}
+
+footer #lang{
+    padding: 0.4em 2em;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgb(212, 211, 211);
+    background-color: #181717;
+    border-radius: 5px;
+}
